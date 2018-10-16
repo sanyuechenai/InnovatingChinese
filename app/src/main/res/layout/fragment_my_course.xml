@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yueworld.baseproject.ui.myCourse.fragment.MyCourseFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/colorToolbar"
+        >
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/indicator_mycourse"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/title_bar_height"
+            />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_mycourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

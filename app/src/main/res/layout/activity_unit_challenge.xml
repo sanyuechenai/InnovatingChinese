@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.yueworld.baseproject.ui.myCourse.activity.UnitChallengeActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:id="@+id/ll_result"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_example_unit"
+        android:textSize="@dimen/txt_size_20"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="你叫什么名字 ？"
+        />
+
+    <RelativeLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <View
+            android:layout_centerInParent="true"
+           style="@style/line_view"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_green_ok"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</LinearLayout>

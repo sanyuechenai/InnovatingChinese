@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="7dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorToolbar"
+            />
+        <TextView
+            android:id="@+id/tv_position"
+            android:text="Recommended 1"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txt_size_18"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_recommend_course"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp"
+        android:background="@color/colorBottomBg"
+        >
+
+        <RelativeLayout
+            android:background="@color/colorBottomBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/bg_recommend"
+                android:layout_width="200dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_title_en"
+                    android:text="Knowledge has no limit"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txt_size_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_title_cn"
+                    android:layout_marginTop="5dp"
+                    android:text="学无止境"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/txt_size_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

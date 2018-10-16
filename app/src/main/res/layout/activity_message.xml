@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBg"
+    tools:context="com.yueworld.baseproject.ui.setting.activity.MessageActivity">
+
+
+    <include
+        android:id="@+id/view_no_data"
+        android:visibility="gone"
+        layout="@layout/no_data_layout"/>
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_message"
+                android:background="@color/colorActivityBg"
+                android:listSelector="@color/colorTransparent"
+                android:dividerHeight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scrollbars="none"
+                android:divider="@color/colorActivityBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.liaoinstan.springview.widget.SpringView>
+</RelativeLayout>

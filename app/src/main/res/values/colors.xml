@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="colorToolbar">#4ad0af</color>
+    <color name="colorLightGreen">#88b92e</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorActivityBg">#efefef</color>
+    <color name="colorBottomBg">#352c68</color>
+    <color name="colorGrayDD">#dddddd</color>
+    <color name="colorLine">#f4f4f4</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorGrayTransparent">#55000000</color>
+    <color name="colorHint">#b6b6b6</color>
+</resources>

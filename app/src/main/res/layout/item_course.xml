@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_item"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <com.yueworld.baseproject.view.CircleImage
+            android:id="@+id/iv_course_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/iv_course_icon"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_course_name"
+                android:text="Course Name 1"
+                android:textSize="@dimen/txt_size_13"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_course_level"
+                android:layout_marginTop="5dp"
+                android:text="LEVEL: HSK1"
+                android:textSize="@dimen/txt_size_13"
+                android:textColor="@color/colorGrayDD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

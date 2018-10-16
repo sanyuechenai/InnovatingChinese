@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yueworld.baseproject.ui.myCourse.activity.CourseActivity">
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:orientation="vertical"
+        android:background="@color/colorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_marginTop="15dp"
+            android:text="Course Name 1"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_course_name_chinese"
+            android:layout_marginTop="10dp"
+            android:text="课程中文名称"
+            android:textSize="@dimen/txt_size_12"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:progress="0"
+                android:max="100"
+                android:layout_gravity="center_vertical"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/progressbar_black"
+                android:layout_width="200dp"
+                android:layout_height="5dp" />
+            <TextView
+                android:id="@+id/tv_rate"
+                android:text="3/12"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/txt_size_10"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/view_no_data"
+            android:visibility="gone"
+            layout="@layout/no_data_layout"/>
+
+        <com.yueworld.baseproject.view.customRecyclerview.SpeedRecyclerView
+            android:id="@+id/srv_course"
+            android:background="#00ffffff"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
